@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> &#128540; Fizz Buzz Game &#128512 </h1>
+        <input id="val" type="text"> &nbsp; <button onclick="game()">Play</button> <br> <br>
+    <label id="res" for=""></label>
+</center>
+   
+
+<script>
+    function game()
+{
+ var n=document.getElementById("val").value;
+ var res;
+ if (n%3==0 && n%5==0)
+  res="FizzBuzz"
+  else if(n%3==0)
+  res="Fizz";
+  else if(n%5==0)
+  res="Buzz";
+  else
+  res=n;
+
+ document.getElementById("res").innerHTML= res;
+
+}
+
+</script>
+
+<style>
+    label{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    body{
+  background-color:rgb(231, 159, 24);
+  margin-top:15rem;
+  color:rgb(34, 17, 110);
+}
+
+</style>
+</body>
+</html>
+
